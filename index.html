@@ -138,19 +138,21 @@
     <section class="s2">
         <div class="main-container">
             <h3 style="text-align: center;">Entre em contato</h3>
-            <form id="contact-form">
+            <form action="POST" data-netlify="true" id="contact-form">
 
                 <label>Nome</label>
-                <input class="input-field" type="text" name="Nome">
+                <input class="input-field" type="text" name="name" placeholder="Nome">
 
                 <label>Assunto</label>
-                <input class="input-field" type="text" name="Assunto">
+                <input class="input-field" type="text" name="Assunto" placeholder="Assunto">
 
                 <label>E-mail</label>
-                <input class="input-field" type="text" name="Email">
+                <input class="input-field" type="text" name="email" placeholder="E-mail">
                 
                 <label>Mensagem</label>
-                <textarea class="input-field" name="Mensagem"></textarea>
+                <textarea class="input-field" name="Mensagem" placeholder="Mensagem"></textarea>
+
+                <div data-netlify-recaptcha="true"></div>
 
                 <input id="submit-btn" type="submit" value="enviar">
             </form>
